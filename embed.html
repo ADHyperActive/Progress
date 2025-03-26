@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRGS Embed Viewer</title>
+</head>
+<body>
+    <div id="dataDisplay"></div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let displayHtml = '';
+        params.forEach((value, key) => {
+            displayHtml += `<p><strong>${key}:</strong> ${value}</p>`;
+        });
+        document.getElementById('dataDisplay').innerHTML = displayHtml;
+    </script>
+</body>
+</html>
