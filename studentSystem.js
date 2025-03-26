@@ -19,7 +19,42 @@ document.querySelector('form').addEventListener('submit', function(event) {
   const fourthAssignments = document.getElementById('fourthAssignments').value;
   const otherAssignments = document.getElementById('otherAssignments').value;
 
-  const prgsData = `FirstName:${firstName}\nLastName:${lastName}\nFirstClass:${firstClass}\nFirstGrade:${firstGrade}\nSecondClass:${secondClass}\nSecondGrade:${secondGrade}\nThirdClass:${thirdClass}\nThirdGrade:${thirdGrade}\nFourthClass:${fourthClass}\nFourthGrade:${fourthGrade}\nOtherClass:${otherClass}\nOtherGrade:${otherGrade}\nFirstAssignments:${firstAssignments}\nSecondAssignments:${secondAssignments}\nThirdAssignments:${thirdAssignments}\nFourthAssignments:${fourthAssignments}\nOtherAssignments:${otherAssignments}`;
+  const prgsData = `
+  First Name:${firstName}
+  Last Name:${lastName}
+
+  
+  First Period Class:${firstClass}
+  First Period Grade:${firstGrade}
+  
+  Second Period Class:${secondClass}
+  Second Period Grade:${secondGrade}
+  
+  Third Period Class:${thirdClass}
+  Third Period Grade:${thirdGrade}
+  
+  Fourth Period Class:${fourthClass}
+  Fourth Period Grade:${fourthGrade}
+  
+  Other Class:${otherClass}
+  Other Grade:${otherGrade}
+  
+  
+  First Period Assignments:
+  ${firstAssignments}
+  
+  Second Period Assignments:
+  ${secondAssignments}
+  
+  Third Period Assignments:
+  ${thirdAssignments}
+  
+  Fourth Period Assignments:
+  ${fourthAssignments}
+  
+  Other Assignments:
+  ${otherAssignments}
+  `;
 
   const blob = new Blob([prgsData], { type: 'text/plain' });
   const url = window.URL.createObjectURL(blob);
