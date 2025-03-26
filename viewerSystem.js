@@ -20,7 +20,7 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
 
             // Add event listener to the embed button
             document.getElementById('embedButton').addEventListener('click', function() {
-                let urlString = "adhyperactive.github.io/Progress/embed.html?";
+                let urlString = "https://adhyperactive.github.io/Progress/embed.html?";
                 for (const key in dataObject) {
                     urlString += encodeURIComponent(key) + "=" + encodeURIComponent(dataObject[key]) + "&";
                 }
