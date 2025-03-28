@@ -9,7 +9,8 @@
         const params = new URLSearchParams(window.location.search);
         let displayHtml = '';
         params.forEach((value, key) => {
-            displayHtml += `<p><strong>${key}:</strong>\n ${value}</p>`;
+            displayHtml += `<p><strong>${key}:</strong>\n ${value}</p>
+            `;
         });
         document.getElementById('dataDisplay').innerHTML = displayHtml;
     </script>
