@@ -1,0 +1,9 @@
+#index-button {
+    background-color:red;
+    color:black;
+    border-radius:10px;
+    height:25px;
+    width:50px;
+    border:2px;
+    border-color:black;
+}
