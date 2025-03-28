@@ -20,39 +20,43 @@ document.querySelector('form').addEventListener('submit', function(event) {
   const otherAssignments = document.getElementById('otherAssignments').value;
 
   const prgsData = `
-  First Name:${firstName}
-  Last Name:${lastName}
-
-  
-  First Period Class:${firstClass}
-  First Period Grade:${firstGrade}
-  
-  Second Period Class:${secondClass}
-  Second Period Grade:${secondGrade}
-  
-  Third Period Class:${thirdClass}
-  Third Period Grade:${thirdGrade}
-  
-  Fourth Period Class:${fourthClass}
-  Fourth Period Grade:${fourthGrade}
-  
-  Other Class:${otherClass}
-  Other Grade:${otherGrade}
-  
-  
-  First Period Assignments:
+  First Name#@:@#${firstName}
+  ##@@
+  Last Name#@:@#${lastName}
+  ##@@
+  First Period Class#@:@#${firstClass}
+  ##@@
+  First Period Grade#@:@#${firstGrade}
+  ##@@
+  Second Period Class#@:@#${secondClass}
+  ##@@
+  Second Period Grade#@:@#${secondGrade}
+  ##@@
+  Third Period Class#@:@#${thirdClass}
+  ##@@
+  Third Period Grade#@:@#${thirdGrade}
+  ##@@
+  Fourth Period Class#@:@#${fourthClass}
+  ##@@
+  Fourth Period Grade#@:@#${fourthGrade}
+  ##@@
+  Other Class#@:@#${otherClass}
+  ##@@
+  Other Grade#@:@#${otherGrade}
+  ##@@
+  First Period Assignments#@:@#
   ${firstAssignments}
-  
-  Second Period Assignments:
+  ##@@
+  Second Period Assignments#@:@#
   ${secondAssignments}
-  
-  Third Period Assignments:
+  ##@@
+  Third Period Assignments#@:@#
   ${thirdAssignments}
-  
-  Fourth Period Assignments:
+  ##@@
+  Fourth Period Assignments#@:@#
   ${fourthAssignments}
-  
-  Other Assignments:
+  ##@@
+  Other Assignments#@:@#
   ${otherAssignments}
   `;
 
