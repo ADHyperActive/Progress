@@ -4,15 +4,15 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         const reader = new FileReader();
         reader.onload = function(e) {
             const content = e.target.result;
-            const lines = content.split('\n');
+            const lines = content.split('##@@');
             let displayHtml = '';
             let dataObject = {}; // Store data for URL parameters
-
+            let i = 0;
             lines.forEach(line => {
-                const parts = line.split(':');
+                const parts = line.split('#@:@#');
                 if (parts.length === 2) {
-                    displayHtml += `<p><strong>${parts[0]}:</strong> ${parts[1]}</p>`;
-                    dataObject[parts[0]] = parts[1]; // Store in dataObject
+                    displayHtml += `<p><strong>${parts[0]}:</strong>\n ${parts[1]}</p>`;
+                    dataObject[i] = [parts[0], parts[1]]; // Store in dataObject
                 }
             });
             document.getElementById('dataDisplay').innerHTML = displayHtml;
